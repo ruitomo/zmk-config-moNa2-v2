@@ -24,14 +24,44 @@
     combos {
         compatible = "zmk,combos";
 
-        layer4_ESC {
-            bindings = <&lt 4 ESC>;
-            key-positions = <39 38>;
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
 
         tab {
             bindings = <&kp TAB>;
+            key-positions = <23 24>;
+        };
+
+        tabright {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        tableft {
+            bindings = <&kp LS(LC(TAB))>;
             key-positions = <11 12>;
+        };
+
+        exclamationmark {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <4 3>;
+        };
+
+        screenshot {
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            key-positions = <22 23>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <7 8>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <17 18>;
         };
     };
 
